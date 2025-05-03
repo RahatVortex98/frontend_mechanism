@@ -335,8 +335,168 @@
 
 // Combining
 
-const first =[1,2,3];
-const second = ['a','b','c'];
+// const first =[1,2,3];
+// const second = ['a','b','c'];
 
-const combine = first.concat(second);
-console.log(combine);
+// const combine = first.concat(second);
+// console.log(combine);
+
+// // spread operator:
+// const first =[1,2,3];
+// const second = ['a','b','c'];
+
+// const combined=[...first,...second];
+// console.log(combined);
+
+
+
+
+
+
+
+// Iterating Arrays
+
+// const numbers =[1,2,3];
+
+// for(let number of numbers){
+//     console.log(number);
+// }
+
+
+// Sorting Data
+
+// let numbers =[3,5,1];
+
+// numbers.sort();
+
+// console.log(numbers)
+
+
+
+// const numbers = [1,-1,2,3];
+// const filtered = numbers.filter(function(value){
+//     return value >=0;
+// });
+
+// console.log(filtered);
+
+
+//Mapping 
+
+// const numbers = [1,-1,2,3];
+// const filters = numbers.filter(function(value){
+//     return value >=0;
+// });
+
+// filters.map()
+
+// console.log(filters);
+
+
+
+// const names = ['Alice', 'Bob', 'Charlie'];
+// const greetings = names.map(names => `Hello, ${names}!`);
+
+// console.log(greetings);
+
+
+
+
+
+
+
+
+// Function 2 types of:
+
+
+// Declarion: in here we call the function before execute the code.
+    // and this process is called HOISTING.
+// walk();
+
+// function walk(){
+//     console.log('walk');
+// }
+
+// // Expression
+
+// const run = function(){
+//     console.log('run');
+// };
+// run();
+
+
+
+
+// ARGUMENT
+
+
+// function sum(){
+//     let total = 0;
+//     for(let value of arguments )
+//         total = total+value;
+//     return total;
+// }
+
+// console.log(sum(1,2,3,4,5,10))
+
+
+// Rest operator(...args)
+
+
+// function sum(...args){
+//     return args.reduce((a,b) => a+b);
+// }
+// console.log(sum(1,2,4,5,10))
+
+
+
+
+
+// DEFAULT Parameters
+
+// function interest(principal,rate=3.5,years=5){
+//     return principal*rate/100*years;
+// }
+// console.log(interest(10000));
+
+
+
+// RETURN FULL NAME
+
+// const person = {
+//     firsName : 'Mosh',
+//     lastName : 'Takla',
+//     fullName(){
+//         return `${person.firsName} ${person.lastName}`
+//     }
+// };
+
+// console.log(person.fullName());
+
+
+// GEtter & Setter
+// Getter: get fullName() lets you read fullName like a property, but it runs a function.
+const person = {
+    firsName : 'Mosh',
+    lastName : 'Takla',
+
+    // Getter
+    get fullName(){
+        return `${person.firsName} ${person.lastName}`;
+    },
+     // Setter
+    set fullName(value) {
+        const parts = value.split(` `);
+        this.firstName = parts[0];
+        this.lastName = parts[1];
+    }
+   
+
+};
+person.fullName = 'Jane Smith';
+console.log(person.firstName); 
+console.log(person.lastName);
+
+console.log(person.fullName);
+
+
