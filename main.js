@@ -476,27 +476,34 @@
 
 // GEtter & Setter
 // Getter: get fullName() lets you read fullName like a property, but it runs a function.
-const person = {
-    firsName : 'Mosh',
-    lastName : 'Takla',
+// const person = {
+//     firsName : 'Mosh',
+//     lastName : 'Takla',
 
-    // Getter
-    get fullName(){
-        return `${person.firsName} ${person.lastName}`;
-    },
-     // Setter
-    set fullName(value) {
-        const parts = value.split(` `);
-        this.firstName = parts[0];
-        this.lastName = parts[1];
-    }
+//     // Getter
+//     get fullName(){
+//         return `${person.firsName} ${person.lastName}`;
+//     },
+//      // Setter
+//     set fullName(value) {
+//         const parts = value.split(` `);
+//         this.firstName = parts[0];
+//         this.lastName = parts[1];
+//     }
    
 
-};
-person.fullName = 'Jane Smith';
-console.log(person.firstName); 
-console.log(person.lastName);
+// };
+// person.fullName = 'Jane Smith';
+// console.log(person.firstName); 
+// console.log(person.lastName);
 
-console.log(person.fullName);
+// console.log(person.fullName);
 
+
+
+
+
+// this keyword:
+
+// console.log(this)
 
