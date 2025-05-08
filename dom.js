@@ -246,35 +246,35 @@
 
 
 
-let newDiv = document.createElement('div');
-newDiv.className = 'hello';
-newDiv.id = 'world';
-newDiv.setAttribute(
-    'title','hello-world'
-);
+// let newDiv = document.createElement('div');
+// newDiv.className = 'hello';
+// newDiv.id = 'world';
+// newDiv.setAttribute(
+//     'title','hello-world'
+// );
 
 
 
 
 
-let newDivText = document.createTextNode("BYE BYE WORLD");
+// let newDivText = document.createTextNode("BYE BYE WORLD");
 
 
-newDiv.appendChild(newDivText);
-console.log(newDiv);
+// newDiv.appendChild(newDivText);
+// console.log(newDiv);
 
 
 
-//adding to main HTML page
+// //adding to main HTML page
 
 
-let container = document.querySelector('header .container');
-let h1 = document.querySelector('header h1');
+// let container = document.querySelector('header .container');
+// let h1 = document.querySelector('header h1');
 
-container.insertBefore(newDiv,h1);
+// container.insertBefore(newDiv,h1);
 
-newDiv.style.fontSize ='30px'
-newDiv.style.color ='grey'
+// newDiv.style.fontSize ='30px'
+// newDiv.style.color ='grey'
 
 
 // 🔧 DOM Manipulation Methods
@@ -291,3 +291,40 @@ newDiv.style.color ='grey'
 // | `element.prepend()`                          | Inserts one or more nodes or strings **at the beginning**                                 |
 // | `element.remove()`                           | Directly removes the element from the DOM                                                 |
 // | `element.insertAdjacentHTML(position, html)` | Inserts HTML at specific positions (`beforebegin`, `afterbegin`, `beforeend`, `afterend`) |
+
+
+
+
+// EVENT
+
+// In JavaScript, an event is an action or occurrence that happens
+//  in the browser and can be responded to with code.
+
+
+
+// 🔥 Examples of Events:
+
+// | Event Type  | Description                           |
+// | ----------- | ------------------------------------- |
+// | `click`     | User clicks an element                |
+// | `mouseover` | User hovers the mouse over an element |
+// | `keydown`   | User presses a key                    |
+// | `submit`    | A form is submitted                   |
+// | `load`      | A page or resource finishes loading   |
+// | `change`    | Input field value changes             |
+// | `input`     | User types in an input or textarea    |
+// | `scroll`    | Page or element is scrolled           |
+
+
+
+// const button = document.querySelector('button');
+
+// button.addEventListener('click',function(e){
+//     alert('Button was Clicked');
+//     document.getElementById('header-title').textContent = "changed";
+    
+    
+//     console.log(e.clientX)
+
+
+// });
